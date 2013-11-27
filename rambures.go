@@ -19,7 +19,7 @@ func main() {
 
 	http.Handle("/", http.StripPrefix("/", http.FileServer(http.Dir(workingdirectory))))
 
-	err = http.ListenAndServe(":9090", nil)
+	err = http.ListenAndServe(":8080", nil)
 
   CheckError(err)
 }
